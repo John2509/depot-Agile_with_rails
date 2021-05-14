@@ -4,7 +4,7 @@ one:
   name: Dave
   address: MyText
   email: dave@test.org
-  pay_type: Check
+  pay_type: 2
 
 two:
   name: MyString
