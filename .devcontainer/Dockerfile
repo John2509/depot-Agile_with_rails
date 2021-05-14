@@ -14,15 +14,16 @@ RUN if [ "${INSTALL_NODE}" = "true" ]; then su vscode -c "umask 0002 && . /usr/l
 #     && apt-get -y install --no-install-recommends <your-package-list-here>
 
 # [Optional] Uncomment this line to install additional gems.
-RUN gem install rails
+RUN gem install rails 
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
 
 RUN yarn add jquery jquery-ui-dist
 
-RUN bundle install
-RUN bin/rails db:migrate
-RUN bin/rails db:seed
+#RUN bundle install
 
-CMD bin/rails server
+#RUN bin/rails db:migrate
+#RUN bin/rails db:seed
+
+#CMD bin/rails server
